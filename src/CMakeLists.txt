@@ -9,7 +9,7 @@ include_directories(${StbRoot})
 include_directories(${GLMRoot})
 
 
-set(HEADER_FILEs ${PROJECT_SOURCE_DIR}/shader.h)
+set(HEADER_FILES ${PROJECT_SOURCE_DIR}/src/shader.h)
 set(SOURCE_FILES ${PROJECT_SOURCE_DIR}/src/main.cc glad.c)
 
 add_executable(OpenGLTest ${HEADER_FILES} ${SOURCE_FILES})
