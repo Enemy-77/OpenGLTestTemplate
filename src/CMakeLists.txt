@@ -14,3 +14,5 @@ set(SOURCE_FILES ${PROJECT_SOURCE_DIR}/src/main.cc glad.c)
 
 add_executable(OpenGLTest ${HEADER_FILES} ${SOURCE_FILES})
 target_link_libraries(OpenGLTest ${GLFWRoot}/lib/glfw3.lib)
+
+set_property(TARGET OpenGLTest PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}")
